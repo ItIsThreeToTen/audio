@@ -45,15 +45,19 @@ header {
     }
 
 }
-.swiper-slide{
+.swiper-container{
     width: 100%;
-    font-size: 0;
-    img{
+    .swiper-slide{
         width: 100%;
-        height: 4.1rem;
-        
+        font-size: 0;
+        img{
+            width: 100%;
+            height: 4.1rem;
+            
+        }
     }
 }
+
 .ul{
     display: flex;
     justify-content: space-between;
@@ -75,19 +79,89 @@ header {
         }
     }
 }
-.uls{
-    display: ;
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 0;
-    li:nth-child(1){
+    // height: 1.05rem;
+    width: 100%;
+    padding-left: 0.3rem; 
+    box-sizing: border-box;
+    padding-right: 0.64rem;
+    p:nth-child(1){
+        margin-top: 0.42rem;
+        margin-bottom: 0.32rem;
         font-size: 0.36rem;
         color:rgb(51, 51, 51);
     }
-    li:nth-child(2){
-        font-size: 0.28rem;
-        color:rgb(51, 51, 51);
+    p:nth-child(2){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a:first-child{
+            font-size: 0.22rem;
+            color:rgb(51, 51, 51);
+            padding-right: 0.72rem;
+        }
+        a:last-child{
+            padding-top:0.12rem ;
+            font-size: 0.22rem;
+            color:#ec32a5;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .p{
+                margin-top:0.08rem ;
+                display: block;
+                background: url(./../img/9@2x.png) no-repeat 0rem 0rem;
+                width: 0.44rem;
+                height: 0.04rem;
+            }
+        }
+
     }
-    li:nth-child(3){
-        font-size: 0.28rem;
-        color:#ec32a5;
+}
+.home{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+    li{
+        width: 2.4rem;
+        margin-right: 0.15rem;
+        box-sizing: border-box;
+        img{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            box-sizing: border-box;
+            margin-left: 0.3rem;
+        }
+        p:nth-child(2){
+            margin-top: 0.16rem;
+            font-size: 0.24rem;
+            color:rgb(51, 51, 51);
+        }
+        p:nth-child(3){
+            margin-top: 0.12rem;
+            font-size: 0.18rem;
+            color:rgb(153, 153, 153);
+            margin-bottom: 0.32rem;
+        }
+        
     }
+    li:nth-child(3n){
+        margin-right: 0rem;
+    }
+    
+}
+footer{
+    position: fixed;
+    bottom: 0.2rem;
+    width: 100%;
+    height: 0.98rem;
+    background: linear-gradient(to right, #5168e3 , #e932a8);
+    
 }
