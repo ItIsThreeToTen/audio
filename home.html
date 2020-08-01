@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/touch.js"></script>
 
 </head>
 
@@ -25,9 +26,8 @@
     </header>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./img/home-1.png" class="banner"></div>
-            <div class="swiper-slide"><img src="./img/home-2.jpg" class="banner"></div>
-            <div class="swiper-slide"><img src="./img/home-3.jpg" class="banner"></div>
+            
+ 
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
@@ -60,9 +60,9 @@
     <div class="div">
         <p>精选歌单</p>
         <p>
-            <a href="#">最新<span class="p"></span>
+            <a href="#" id="new">最新</span>
             </a>
-            <a href="#">推荐<span class="p"></span></a>
+            <a href="#" id="recommend">推荐</a>
         </p>
 
     </div>
@@ -72,16 +72,7 @@
             <p>轻车上路，一路飙向爱的乌托邦</p>
             <p>安安静静做自己</p>
         </li>
-        <li>
-            <img src="./img/10@2x.png" alt="">
-            <p>轻车上路，一路飙向爱的乌托邦</p>
-            <p>安安静静做自己</p>
-        </li>
-        <li>
-            <img src="./img/10@2x.png" alt="">
-            <p>轻车上路，一路飙向爱的乌托邦</p>
-            <p>安安静静做自己</p>
-        </li> -->
+         -->
     </ul>
     <footer>
         <div>
@@ -95,29 +86,14 @@
             <span></span>
             <span></span>
         </div>
-        <audio src="./music/周杰伦 - 说好不哭（with 五月天阿信）.mp3" muted autoplay loop></audio>
+        <audio src="./music/周杰伦 - 说好不哭（with 五月天阿信）.mp3"   autoplay loop></audio>
 
     </footer>
 </body>
 
 <script src="./js/swiper-bundle.min.js"></script>
 <script>
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
-
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        //自动切换
-        autoplay: {
-            delay: 1000,
-            stopOnLastSlide: false,
-            // disableOnInteraction: true,
-            disableOnInteraction: false
-        }
-    })
+    
 </script>
 <script src="./js/jQuery.js"></script>
 <script src="./js/home.js"></script>
