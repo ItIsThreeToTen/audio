@@ -93,7 +93,12 @@
 
 <script src="./js/swiper-bundle.min.js"></script>
 <script>
-    
+    function size() {
+        var child = document.documentElement.clientWidth;
+        var font = child / 750 * 100 + 'px';
+        document.getElementsByTagName('html')[0].style.fontSize = font;
+    }
+    window.onresize = size;
 </script>
 <script src="./js/jQuery.js"></script>
 <script src="./js/home.js"></script>
