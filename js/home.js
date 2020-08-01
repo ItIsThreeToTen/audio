@@ -60,7 +60,9 @@ $.get(
 )
 //推荐点击事件
 touch.on(recommend, 'tap', function () {
-    $(recommend).toggleClass('toggle')
+    $(news).removeClass('toggle')
+    $(recommend).addClass('toggle')
+    $('.home').empty()
     var url = 'http://192.168.1.45:3000/home';
     $.get(url, {
         type: 'recommend'
@@ -85,7 +87,9 @@ touch.on(recommend, 'tap', function () {
 })
 //最新
 touch.on(news, 'tap', function () {
-    $(news).toggleClass('toggle')
+    $('.home').empty()
+    $(recommend).removeClass('toggle')
+    $(news).addClass('toggle')
     var url = 'http://192.168.1.45:3000/home';
     $.get(url, {
         type: 'new'
@@ -109,8 +113,23 @@ touch.on(news, 'tap', function () {
         })
 })
 
+//音乐
+ var audio = document.getElementsByTagName('audio')[0];
 
-
+ var  flag =true;
+$('.play').on('click',function(){
+    if(flag){
+        flag=false;
+        audio.play();
+        console.log(flag)
+        $('.play').css('background-image','url(./../../img/ziyuan.png)')
+    }else{
+        flag=true;
+        $('.play').css('background-image','url(./../../img/home-4.png)')
+        audio.pause();
+        console.log(flag)
+    }
+})
 
 
 
